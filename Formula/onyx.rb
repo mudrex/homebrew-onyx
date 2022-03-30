@@ -5,21 +5,21 @@
 class Onyx < Formula
   desc "Onyx is a small wrapper over AWS SDK to perform some console ui tasks easily via command line!"
   homepage "https://github.com/mudrex/homebrew-onyx"
-  version "0.0.41"
+  version "0.0.42"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.41/onyx_0.0.41_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "89b6304d33e0059c7f5259dc9edce7b54c81e9e4b8a5e3660803a4d25c16365d"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.42/onyx_0.0.42_Darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "7a8c894349e4c4bfd046724f430f8e86b327925ed2d86253771da2fc323d5733"
 
       def install
         bin.install "onyx"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.41/onyx_0.0.41_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "4dc0c31beef173aa2f1d79daa2157f22331c5161ded3c08c621eaf4207c49eb8"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.42/onyx_0.0.42_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "d6eb2883d93f8784b156be636039d6d5f123793a8bb820444dd1016e7927d52f"
 
       def install
         bin.install "onyx"
@@ -29,16 +29,16 @@ class Onyx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.41/onyx_0.0.41_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "a9cedfa48f4b22e0b98614b823569988545d41b8df9209c260dfea807fda17f6"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.42/onyx_0.0.42_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "f524c088e78854a26bf49d2194562a00e963e8c1fea924bc215373b9977ac131"
 
       def install
         bin.install "onyx"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.41/onyx_0.0.41_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "e5d97cc8d7fd6a4b0e2d9082a438a3276023b2930d47b6455b00c87f6ad89c8c"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.42/onyx_0.0.42_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "61a24538967b527d5fef988634aeb3c76e77392cdb4cd9ffb8229e84c8cb1911"
 
       def install
         bin.install "onyx"
