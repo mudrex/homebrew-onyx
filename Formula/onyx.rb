@@ -5,21 +5,21 @@
 class Onyx < Formula
   desc "Onyx is a small wrapper over AWS SDK to perform some console ui tasks easily via command line!"
   homepage "https://github.com/mudrex/homebrew-onyx"
-  version "0.0.68"
+  version "0.0.69"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.68/onyx_0.0.68_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ade27ed2d6c7b14e973dbdd40bc7bd9da34b252e77ecbd6b4da274d8b79f4c0d"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.69/onyx_0.0.69_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8a2de1d206e39012977aabf8e06f88db3999e65ace02bfabc08642d91144b240"
 
       def install
         bin.install "onyx"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.68/onyx_0.0.68_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "d60b677e82dbbb22a4bbeb48c8dfb179012b0fa1631431dbaa685f98ddb4aaa6"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.69/onyx_0.0.69_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8a3413683d92165524d77406dd07c6b7be5ef54f4e60c440f9c472cf6d0402d9"
 
       def install
         bin.install "onyx"
@@ -29,16 +29,16 @@ class Onyx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.68/onyx_0.0.68_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "3b675fcf267f3c0db9744cde7cdd5c71da78711319e625416c6ac5a18b100d24"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.69/onyx_0.0.69_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "639aef7448cf23d56502bb12968db6782c0d26174bfd1e34ab77e2b5ceb9305f"
 
       def install
         bin.install "onyx"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/mudrex/onyx/releases/download/v0.0.68/onyx_0.0.68_Linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "477c4156e569bb89d83a1185c5a8d640bfb14b446e8a59e88249f60e11a5ac27"
+      url "http://github.com/mudrex/onyx/releases/download/v0.0.69/onyx_0.0.69_Linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "006951c8023233a5ed1bc3cac76a4679cd0e3698eba7826f78566806397e652d"
 
       def install
         bin.install "onyx"
